@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dao nguoc mang nhap vao</title>
+</head>
+<body>
+<script>
+  let a = new Array();
+  for(let i=0; i<10; i++){
+    a[i] = +prompt("nhap cac gia tri cac phan tu:");
+  }
+  let first=0;
+  let last= a.length-1;
+  while (first<last) {
+      let b= a[first];
+      a[first]= a[last];
+      a[last]=b;
+      first++;
+      last--;
+  } document.write(a)
+</script>
+</body>
+</html>

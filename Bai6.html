@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let x = new Array();
+  for(let i=0; i<10; i++){
+    x[i] = +prompt("nhap cac gia tri cac phan tu:");
+  }
+
+  var V= prompt("Nhập vào số V");
+  let a= 0
+  for (let i=0; i<x.length; i++) {
+    if (x[i]==V) {
+      a++
+    }
+  } if (a>0) {
+    document.write("Có "+V+ " trong mảng")
+  } else {
+    document.write("Không có "+V+ " trong mảng ")
+  }
+</script>
+</body>
+</html>
