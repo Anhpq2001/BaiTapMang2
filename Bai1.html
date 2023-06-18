@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so lon hon hoac bang 10</title>
+</head>
+<body>
+<script>
+  let a = new Array();
+  let n = +prompt("nhap so luong phan tu cua mang:");
+  let count = 0;
+  for(let i=0; i<=n; i++){
+    a[i] = +prompt("nhap gia tri cua phan tu:");
+    if(a[i]>=10){
+      count++;
+    }
+  }
+  document.write("Co " + count + " phan tu lon hon hoac bang 10!");
+</script>
+</body>
+</html>
