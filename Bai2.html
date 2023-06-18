@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so lon nhat trong 10 phan tu trong mang</title>
+</head>
+<body>
+<script>
+  let a = new Array();
+  for(let i=0; i<10; i++){
+    a[i] = +prompt("nhap cac gia tri cac phan tu:");
+  }
+  for (let i = 0; i<10; i++){
+      for(let j = 0; j<10; j++){
+          if (a[j] > a[j+1]){
+              temp = a[j];
+              a[j] = a[j+1];
+              a[j+1] = temp;
+          }
+      }
+  }
+  document.write("Phan tu lon nhat rong mang la: " + a[9]);
+</script>
+</body>
+</html>
