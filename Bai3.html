@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hien thi phan tu lon nhat va in ra gia tri trung binh trong mang</title>
+</head>
+<body>
+<script>
+    let a = new Array();
+    let n = +prompt("nhap so luong phan tu trong mang:");
+    let avg = 0;
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("nhap cac gia tri cua moi phan tu:");
+        avg += a[i];
+    }
+    for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
+            if (a[j] > a[j + 1]) {
+                let temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
+        }
+    }
+    document.write("Phan tu lon nhat trong mang: " + a[n - 1]);
+    document.write("gia tri trung binh cua cac phan tu trong mang la: " + parseFloat(avg / 10));
+
+
+</script>
+</body>
+</html>
